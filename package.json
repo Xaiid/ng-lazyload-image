@@ -1,103 +1,56 @@
 {
-  "name": "ng-lazyload-image",
-  "version": "4.0.0",
+  "_args": [
+    [
+      "ng-lazyload-image@3.4.2",
+      "/Users/jeaneth/HuntNg"
+    ]
+  ],
+  "_from": "ng-lazyload-image@3.4.2",
+  "_id": "ng-lazyload-image@3.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-Cukdq+lSDzWfvMAAvbi6aDv4cCJWX0dwqDJUZ5LmEUGHA+9+ajGInQ/lbxH1UsPgVo+pL4LvjJrJoHPq4S6aIQ==",
+  "_location": "/ng-lazyload-image",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ng-lazyload-image@3.4.2",
+    "name": "ng-lazyload-image",
+    "escapedName": "ng-lazyload-image",
+    "rawSpec": "3.4.2",
+    "saveSpec": null,
+    "fetchSpec": "3.4.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ng-lazyload-image/-/ng-lazyload-image-3.4.2.tgz",
+  "_spec": "3.4.2",
+  "_where": "/Users/jeaneth/HuntNg",
+  "author": {
+    "name": "Oskar Karlsson",
+    "email": "kontakta@oskarkarlsson.nu"
+  },
+  "bugs": {
+    "url": "https://github.com/tjoskar/ng-lazyload-image/issues"
+  },
   "description": "Lazy image loader for Angular > v2",
-  "main": "index.js",
-  "scripts": {
-    "prepare": "npm run build",
-    "test": "karma start karma.local.js",
-    "test:ci": "karma start karma.ci.js",
-    "start": "webpack-dev-server --progress --profile --colors --watch",
-    "build": "copyfiles -u 1 dist/package.json .backup && rimraf dist && tsc && ngc src && copyfiles LICENSE README.md dist && copyfiles -u 1 .backup/package.json dist && rimraf dist/example dist/test .backup",
-    "build:example": "rimraf example-dist && webpack --config webpack.prod.config.js --profile && rimraf example-dist/example example-dist/src && copyfiles -u 1 example/style.css example/index.html example-dist",
-    "e2e": "protractor",
-    "e2e:ci": "protractor protractor.ci.conf.js",
-    "webdriver:update": "webdriver-manager update",
-    "webdriver:start": "webdriver-manager start",
-    "e2e:debug": "protractor --elementExplorer"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tjoskar/ng-lazyload-image.git"
-  },
+  "homepage": "https://github.com/tjoskar/ng-lazyload-image#readme",
   "keywords": [
     "lazy-load",
     "lazy-image",
     "angular"
   ],
-  "author": "Oskar Karlsson <kontakta@oskarkarlsson.nu>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tjoskar/ng-lazyload-image/issues"
-  },
-  "homepage": "https://github.com/tjoskar/ng-lazyload-image#readme",
+  "main": "index.js",
+  "name": "ng-lazyload-image",
   "peerDependencies": {
-    "@angular/core": ">=6.0.0",
-    "rxjs": ">=6.0.0"
+    "@angular/core": ">=2.0.0",
+    "rxjs": ">=5.0.0"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "@angular/animations": "^6.0.2",
-    "@angular/common": "^6.0.2",
-    "@angular/compiler": "^6.0.2",
-    "@angular/compiler-cli": "^6.0.2",
-    "@angular/core": "^6.0.2",
-    "@angular/platform-browser": "^6.0.2",
-    "@angular/platform-browser-dynamic": "^6.0.2",
-    "@angular/platform-server": "^6.0.2",
-    "@angular/router": "^6.0.2",
-    "@types/core-js": "^0.9.46",
-    "@types/mocha": "^5.2.0",
-    "@types/node": "^10.1.2",
-    "awesome-typescript-loader": "^5.0.0",
-    "copyfiles": "^2.0.0",
-    "core-js": "^2.5.6",
-    "electron": "^2.0.1",
-    "karma": "^2.0.2",
-    "karma-electron-launcher": "^0.2.0",
-    "karma-mocha": "^1.1.1",
-    "karma-sauce-launcher": "^1.1.0",
-    "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^3.0.0",
-    "lodash.isequal": "^4.5.0",
-    "mocha": "^5.2.0",
-    "null-loader": "^0.1.1",
-    "protractor": "^5.3.2",
-    "rimraf": "^2.6.1",
-    "rxjs": "6.1.0",
-    "simple-spy": "^2.1.1",
-    "source-map-loader": "^0.2.1",
-    "typescript": "2.7.2",
-    "wallaby-webpack": "^3.9.8",
-    "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.3",
-    "webpack-dev-server": "^3.1.4",
-    "zone.js": "^0.8.26"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjoskar/ng-lazyload-image.git"
   },
-  "gitmoji": {
-    "blacklist": [
-      "rocket",
-      "tada",
-      "apple",
-      "penguin",
-      "checkered-flag",
-      "robot",
-      "green-apple",
-      "construction-worker",
-      "chart-with-upwards-trend",
-      "whale",
-      "globe-with-meridians",
-      "hankey",
-      "package",
-      "bento",
-      "wheelchair",
-      "beers",
-      "speech-balloon",
-      "card-file-box",
-      "loud-sound",
-      "mute",
-      "children-crossing",
-      "iphone"
-    ]
-  }
+  "version": "3.4.2"
 }

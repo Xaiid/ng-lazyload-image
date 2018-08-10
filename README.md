@@ -141,22 +141,6 @@ export class AboutPage {
 }
 ```
 
-In case of using ion-slides in Ionic 2+, you can include your own scroll observable as below.
-
-```javascript
-@Component({
-    selector: 'page-image',
-    template: `
-      <ion-content #container padding>
-        <img [defaultImage]="https://www.placecage.com/1000/1000" [lazyLoad]="lazyLoadImage" [scrollObservable]="container.ionSlideWillChange" />
-      </ion-content>
-    `
-})
-export class AboutPage {
-    lazyLoadImage = 'https://hd.unsplash.com/photo-1431400445088-1750c997c6b5';
-}
-```
-
 See example folder for more usages.
 
 ### FAQ
@@ -168,18 +152,6 @@ See example folder for more usages.
 **Q** Does this library work with ionic or some other wrapper for Angular?
 
 **A** Yes, but ionic and some other library wraps the whole document inside an other div so you might need to create your own scroll listener. https://github.com/tjoskar/ng-lazyload-image/issues?utf8=%E2%9C%93&q=is%3Aissue+Ionic
-
-**Q** How can I add a transition effect between the default image and the lazy loaded image?
-
-**A** See: https://github.com/tjoskar/ng-lazyload-image/issues/300
-
-**Q** I can't get it to work with electron. Can you help me?
-
-**A** Make sure you uses the [right file path](https://github.com/tjoskar/ng-lazyload-image/issues/308#issuecomment-368240550).
-
-**Q** I can't get it to work. Can you help me?
-
-**A** Sure, create an issue and describe your issue in as much detail as possible.
 
 ### API
 
